@@ -1,4 +1,4 @@
-package src.sort;
+package sort;
 
 /**
  * Created by YoungMan on 2019-06-02.
