@@ -16,10 +16,10 @@ public class BOJ_11726_2xN타일링 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int N = scanner.nextInt();
-		d = new int[N + 1];
+		int n = scanner.nextInt();
+		d = new int[n + 1];
 
-		System.out.println(bottomUp(N));
+		System.out.println(bottomUp(n));
 	}
 
 	private static int topDown(int n) {

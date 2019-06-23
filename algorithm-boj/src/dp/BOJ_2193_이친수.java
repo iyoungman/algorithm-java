@@ -16,10 +16,10 @@ public class BOJ_2193_이친수 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int N = scanner.nextInt();
+		int n = scanner.nextInt();
 
 		//결과 출력
-		System.out.println(bottomUp(N));
+		System.out.println(bottomUp(n));
 	}
 
 	private static long bottomUp(int n) {
