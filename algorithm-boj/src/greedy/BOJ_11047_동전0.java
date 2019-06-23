@@ -33,6 +33,5 @@ public class BOJ_11047_동전0 {
 		}
 
 		System.out.println(result);
-		scan.close();
 	}
 }

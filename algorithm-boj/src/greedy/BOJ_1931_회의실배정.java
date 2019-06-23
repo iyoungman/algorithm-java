@@ -31,7 +31,7 @@ public class BOJ_1931_회의실배정 {
 
 				if (o1[1] == o2[1]) {
 					//종료시간이 같을경우 시작시간으로 정렬
-					return Integer.compare(o1[0], o2[0]);
+					return Integer.compare(o1[0], o2[0]);//o1과 o2의 위치를 바꾸면 내림차순 정렬, compare = compareTo
 				}
 				//종료시간으로 정렬
 				return Integer.compare(o1[1], o2[1]);
