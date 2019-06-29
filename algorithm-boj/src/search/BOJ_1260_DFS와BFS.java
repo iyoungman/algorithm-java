@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 public class BOJ_1260_DFS와BFS {
 
-	static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
-	static boolean[] visit;
+	private static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+	private static boolean[] visit;
 
 	public static void main(String[] args) {
 
@@ -42,7 +42,7 @@ public class BOJ_1260_DFS와BFS {
 		bfs(V);
 	}
 
-	static void dfs(int start) {
+	private static void dfs(int start) {
 		visit[start] = true;
 		System.out.print(start + " ");
 
@@ -54,7 +54,7 @@ public class BOJ_1260_DFS와BFS {
 		}
 	}
 
-	static void bfs(int start) {
+	private static void bfs(int start) {
 		//방문 초기화
 		visit = new boolean[graph.size()];
 		Queue<Integer> queue = new LinkedList<Integer>();

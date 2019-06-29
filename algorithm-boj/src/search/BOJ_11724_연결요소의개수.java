@@ -9,22 +9,21 @@ import java.util.Scanner;
 
 public class BOJ_11724_연결요소의개수 {
 
-	static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
-	static boolean[] visit;
-	static int resultCount = 0;
+	private static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+	private static boolean[] visit;
+	private static int resultCount = 0;
 
 	public static void main(String[] args) {
-
 		Scanner scanner = new Scanner(System.in);
-		int V = scanner.nextInt();
-		int E = scanner.nextInt();
+		int v = scanner.nextInt();
+		int e = scanner.nextInt();
 
-		for (int i = 0; i < V + 1; i++) {
+		for (int i = 0; i < v + 1; i++) {
 			graph.add(new ArrayList<Integer>());
 		}
 		visit = new boolean[graph.size()];
 
-		for (int i = 0; i < E; i++) {
+		for (int i = 0; i < e; i++) {
 			int start = scanner.nextInt();
 			int end = scanner.nextInt();
 
@@ -42,7 +41,7 @@ public class BOJ_11724_연결요소의개수 {
 		System.out.println(resultCount);
 	}
 
-	static void dfs(int start) {
+	private static void dfs(int start) {
 		visit[start] = true;
 
 		for (int i = 0; i < graph.get(start).size(); i++) {

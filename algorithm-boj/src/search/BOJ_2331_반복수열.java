@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 public class BOJ_2331_반복수열 {
 
-	static int[] visit = new int[236197];
-	static int P;
+	private static int[] visit = new int[236197];
+	private static int P;
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class BOJ_2331_반복수열 {
 		System.out.println(dfs(A, 1));
 	}
 
-	static int dfs(int start, int count) {
+	private static int dfs(int start, int count) {
 		if (visit[start] != 0) {//이미 방문한 곳이라면
 			return visit[start] - 1;//처음 방문했던 번째의 전 번째 까지가 반복하지 않은 부분의 숫자개수
 		}
