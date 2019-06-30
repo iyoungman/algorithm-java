@@ -17,17 +17,17 @@ public class BOJ_1260_DFS와BFS {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		int N = scanner.nextInt();//정점 개수
-		int M = scanner.nextInt();//간선 개수
-		int V = scanner.nextInt();//탐색을 시작할 정점 번호
+		int n = scanner.nextInt();//정점 개수
+		int m = scanner.nextInt();//간선 개수
+		int v = scanner.nextInt();//탐색을 시작할 정점 번호
 
 		//정점 만큼 초기화
-		for (int i = 0; i < N + 1; i++) {
+		for (int i = 0; i < n; i++) {
 			graph.add(new ArrayList<Integer>());
 		}
 
 		//간선 입력
-		for (int i = 0; i < M; i++) {
+		for (int i = 0; i < m; i++) {
 			int start = scanner.nextInt();
 			int end = scanner.nextInt();
 
@@ -36,10 +36,10 @@ public class BOJ_1260_DFS와BFS {
 		}
 
 		visit = new boolean[graph.size()];
-		dfs(V);
+		dfs(v);
 
 		System.out.println();
-		bfs(V);
+		bfs(v);
 	}
 
 	private static void dfs(int start) {

@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 /**
  * Created by YoungMan on 2019-06-11.
+ * https://www.acmicpc.net/problem/11724
  */
 
 public class BOJ_11724_연결요소의개수 {

@@ -22,20 +22,20 @@ public class BOJ_2667_단지번호붙이기 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int N = scanner.nextInt();
-		map = new int[N][N];
-		visit = new boolean[N][N];
+		int n = scanner.nextInt();
+		map = new int[n][n];
+		visit = new boolean[n][n];
 
 		//입력
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < n; i++) {
 			String str = scanner.next();
 			for (int j = 0; j < str.length(); j++) {
 				map[i][j] = str.charAt(j) - '0';
 			}
 		}
 
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
 				if (map[i][j] == 1 && !visit[i][j]) {//단지가 1이고 아직 방문처리되지 않았다면
 					results.add(bfs(i, j));
 				}

@@ -24,29 +24,29 @@ public class BOJ_2178_미로탐색 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int N = scanner.nextInt();//행
-		int M = scanner.nextInt();//열
-		map = new int[N][M];
-		visit = new int[N][M];
+		int n = scanner.nextInt();//행
+		int m = scanner.nextInt();//열
+		map = new int[n][m];
+		visit = new int[n][m];
 
 		//입력
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < n; i++) {
 			String str = scanner.next();
 			for (int j = 0; j < str.length(); j++) {
 				map[i][j] = str.charAt(j) - '0';
 			}
 		}
 
-		bfs(N, M);
-		System.out.println(visit[N-1][M-1]);
+		bfs(n, m);
+		System.out.println(visit[n-1][m-1]);
 	}
 
-	private static void bfs(int N, int M) {
+	private static void bfs(int n, int m) {
 
 		visit[0][0] = 1;
 		checkUpDownLeftRight(0,0);
 
-		while (visit[N-1][M-1] == 0) {
+		while (visit[n-1][m-1] == 0) {
 			int frontX = xQueue.poll();
 			int frontY = yQueue.poll();
 

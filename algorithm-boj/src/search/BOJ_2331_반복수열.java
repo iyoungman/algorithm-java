@@ -17,10 +17,10 @@ public class BOJ_2331_반복수열 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		int A = scanner.nextInt();
+		int a = scanner.nextInt();
 		P = scanner.nextInt();
 
-		System.out.println(dfs(A, 1));
+		System.out.println(dfs(a, 1));
 	}
 
 	private static int dfs(int start, int count) {
