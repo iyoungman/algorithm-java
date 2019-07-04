@@ -28,7 +28,6 @@ public class BOJ_11047_동전0 {
 			}
 			int mok = price / value[i];
 			result = result + mok;
-
 			price = price % value[i];
 		}
 

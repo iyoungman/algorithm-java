@@ -32,8 +32,8 @@ public class BOJ_11724_연결요소의개수 {
 			graph.get(end).add(start);
 		}
 
-		for(int i = 1; i<graph.size(); i++) {
-			if(!visit[i]) {//방문하지 않았다면
+		for (int i = 1; i < graph.size(); i++) {
+			if (!visit[i]) {//방문하지 않았다면
 				dfs(i);
 				resultCount++;
 			}

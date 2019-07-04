@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 /**
  * Created by YoungMan on 2019-06-10.
+ * https://www.acmicpc.net/problem/1260
  */
 
 public class BOJ_1260_DFS와BFS {
