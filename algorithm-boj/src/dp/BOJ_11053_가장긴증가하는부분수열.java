@@ -26,8 +26,8 @@ public class BOJ_11053_가장긴증가하는부분수열 {
 
 		//BottomUp
 		for (int i = 2; i < n + 1; i++) {
-			for (int j = 1; j < i; j++) {
-				d[i] = (nums[i] > nums[j]) ? Math.max(d[i], d[j] + 1) : Math.max(d[i], 1);
+			for (int k = 1; k < i; k++) {
+				d[i] = (nums[i] > nums[k]) ? Math.max(d[i], d[k] + 1) : Math.max(d[i], 1);
 			}
 		}
 
