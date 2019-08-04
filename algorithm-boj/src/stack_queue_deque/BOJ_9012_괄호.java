@@ -1,9 +1,10 @@
-package basic;
+package stack_queue_deque;
 
 import java.util.Stack;
 
 /**
  * Created by YoungMan on 2019-04-18.
+ * https://www.acmicpc.net/problem/9012
  */
 
 public class BOJ_9012_괄호 {

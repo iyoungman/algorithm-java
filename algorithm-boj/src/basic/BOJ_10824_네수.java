@@ -1,5 +1,7 @@
 package basic;
 
+import java.util.Scanner;
+
 /**
  * Created by YoungMan on 2019-04-18.
  * https://www.acmicpc.net/problem/10824
@@ -8,11 +10,16 @@ package basic;
 public class BOJ_10824_네수 {
 
 	public static void main(String[] args) {
-		int a = 10, b = 20, c = 30, d = 40;
+		Scanner scanner = new Scanner(System.in);
+		long a = scanner.nextLong();
+		long b = scanner.nextLong();
+		long c = scanner.nextLong();
+		long d = scanner.nextLong();
 
-		int hap = Integer.parseInt(String.valueOf(a).concat(String.valueOf(b)))
-				+ Integer.parseInt(String.valueOf(c).concat(String.valueOf(d)));
+		long hap = Long.parseLong(String.valueOf(a).concat(String.valueOf(b)))
+				+ Long.parseLong(String.valueOf(c).concat(String.valueOf(d)));
 
+		//결과 출력
 		System.out.println(hap);
 	}
 }

@@ -1,4 +1,4 @@
-package basic;
+package stack_queue_deque;
 
 /**
  * Created by YoungMan on 2019-04-18.
