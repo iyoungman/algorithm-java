@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by YoungMan on 2019-08-06.
  */
 
-public class Kakao2019_Test1_오픈채팅방 {
+public class Kakao2018_Test1_오픈채팅방 {
 
 	public static void main(String[] args) {
 		String[] record = {"Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"};

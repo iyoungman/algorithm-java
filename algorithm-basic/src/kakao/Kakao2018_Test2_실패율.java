@@ -8,7 +8,7 @@ import java.util.Comparator;
  * double, int 형의 클래스로 만들었으면 더 나았을지도 모르겠다
  */
 
-public class Kakao2019_Test2_실패율 {
+public class Kakao2018_Test2_실패율 {
 
 	public static void main(String[] args) {
 		int n = 5;//스테이지 개수
