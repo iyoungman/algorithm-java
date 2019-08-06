@@ -9,12 +9,12 @@ import java.util.*;
 public class BOJ_2750_수정렬하기 {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
 		Set<Integer> set = new HashSet<>();
 
 		for (int i = 0; i < num; i++) {
-			int input = scan.nextInt();
+			int input = scanner.nextInt();
 			set.add(input);
 		}
 		List<Integer> list = new ArrayList<>(set);

@@ -1,28 +1,28 @@
 package sort;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by YoungMan on 2019-05-01.
+ * https://www.acmicpc.net/problem/10989
  */
 
 public class BOJ_10989_수정렬하기3 {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
-		List<Integer> list = new ArrayList<>();
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		int[] nums = new int[n];
 
-		for (int i = 0; i < num; i++) {
-			int input = scan.nextInt();
-			list.add(input);
+		//입력
+		for (int i = 0; i < n; i++) {
+			nums[i] = scanner.nextInt();
 		}
 
-		Collections.sort(list);
-		for(int i : list) {
+		//정렬
+		Arrays.sort(nums);
+
+		for (int i : nums) {
 			System.out.println(i);
 		}
 	}
