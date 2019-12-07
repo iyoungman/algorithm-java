@@ -44,7 +44,7 @@ public class BOJ_2156_포도주시식 {
 		if (n <= 2) {
 			return d[n];
 		}
-j
+
 		for (int i = 3; i <= n; i++) {
 			int tempOne = d[i - 1];
 			int tempTwo = d[i - 2] + wines[i];

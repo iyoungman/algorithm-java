@@ -11,11 +11,12 @@ public class StringFormat {
 	public static void main(String[] args) {
 
 		int testInt = 11;
-		String intResult = String.format("%05d",testInt);
+		String intResult = String.format("%05d", testInt);
 		String testStr = "11";
-		String strResult = String.format("%5s",testStr);
+		String strResult = String.format("%5s", testStr);
 
 		System.out.println(intResult);
 		System.out.println(strResult);
+
 	}
 }

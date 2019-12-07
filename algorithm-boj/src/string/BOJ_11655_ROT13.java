@@ -1,4 +1,6 @@
-package basic;
+package string;
+
+import java.util.Scanner;
 
 /**
  * Created by YoungMan on 2019-04-18.
@@ -11,16 +13,15 @@ package basic;
 public class BOJ_11655_ROT13 {
 
 	public static void main(String[] args) {
-		String input1 = "Baekjoon Online Judge";
-		String input2 = "One is 1";
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
 		StringBuilder stringBuilder = new StringBuilder();
 
-		for (int i = 0; i < input2.length(); i++) {
+		for (int i = 0; i < input.length(); i++) {
 
-			char ch = input2.charAt(i);
+			char ch = input.charAt(i);
 
 			if (ch >= 'A' && ch <= 'M') {
-				System.out.println(ch + 13);
 				stringBuilder.append((char)(ch + 13));
 				continue;
 			}
@@ -38,6 +39,7 @@ public class BOJ_11655_ROT13 {
 			}
 			stringBuilder.append(ch);
 		}
+
 		System.out.println(stringBuilder.toString());
 	}
 }
